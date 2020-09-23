@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Arquivo Pilotos</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>601</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Código</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nome</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>País</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Idade</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Equipe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Carro</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Pontos</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>78</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Codigo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Nome</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>País</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Equipe</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Carro</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pontos</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOrdenar">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>90</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ordenar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>648</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCarregar_arquivos">
+    <property name="title">
+     <string>Carregar arquivos</string>
+    </property>
+    <addaction name="actionAbrir"/>
+   </widget>
+   <addaction name="menuCarregar_arquivos"/>
+  </widget>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
